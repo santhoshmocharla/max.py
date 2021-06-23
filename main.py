@@ -51,36 +51,43 @@ def run_max():
         talk('opening notepad sir')
         npath = "C:\\Windows\\system32\\notepad.exe"
         os.startfile(npath)
+        
     elif 'open browser' in command:
         talk('opening browser sir')
         bpath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
         os.startfile(bpath)
+        
     elif 'open command prompt' in command:
         talk('opening command prompt sir')
         os.system("start cmd")
+        
     elif 'open youtube' in command:
         talk('opening youtube sir')
         webbrowser.open("www.youtube.com")
     elif 'open whatsapp' in command:
         talk('opening whatsapp sir')
         webbrowser.open("https://web.whatsapp.com/")
+        
     elif 'open facebook' in command:
         talk('opening facebook sir')
         webbrowser.open("www.facebook.com")
+    
     elif 'open myntra' in command:
         talk('opening myntra sir')
         webbrowser.open("www.myntra.com")
+    
     elif 'open amazon' in command:
         talk('opening amazon sir')
         webbrowser.open("www.amazon.in")
+    
     elif 'open flipkart' in command:
         talk('opening flipkart sir')
         webbrowser.open("www.flipkart.com")
+    
     elif 'search on google' in command:
         talk('what should i search on google sir')
         cm = take_command().lower()
         webbrowser.open(f"{cm}")
-
 
     elif 'time' in command:
         time = datetime.datetime.now().strftime('%I %M %p')
