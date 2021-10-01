@@ -119,11 +119,6 @@ def run_max():
         print(info)
         talk(info)
 
-    elif 'are you single' in command:
-        print('i am proud to be single like you sir')
-        talk('i am proud to be single like you sir')
-
-
     elif 'play some music' in command:
         talk('playing music sir')
         music_dir = "C:\\Users\\Mocharla Santhosh\\Music\\music"
